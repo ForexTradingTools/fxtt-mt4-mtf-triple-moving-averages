@@ -1,0 +1,1 @@
+# fxtt-mt4-mtf-triple-moving-averages
