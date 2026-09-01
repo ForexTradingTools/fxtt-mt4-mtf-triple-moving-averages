@@ -7,8 +7,6 @@
 
 > **MTF Triple MA MT4** projects Fast, Medium, and Slow moving averages from nine standard timeframes onto one MetaTrader 4 chart. Use the draggable on-chart panel to enable the timeframes that matter to your analysis.
 
-![MTF Triple Moving Averages on MT4](screenshots/mtf-triple-ma-mt4.png)
-
 **Product page:** [forextradingtools.eu/en/marketplace/mtf-triple-ma](https://forextradingtools.eu/en/marketplace/mtf-triple-ma)
 
 ## Overview
@@ -114,8 +112,6 @@ fxtt-mt4-mtf-triple-moving-averages/
 ├── src/
 │   └── MTF_Triple_MA.mq4       # Complete self-contained MQL4 source
 ├── releases/                   # Compiled .ex4 distribution files
-├── screenshots/
-│   └── mtf-triple-ma-mt4.png   # MT4 product screenshot
 ├── LICENSE                     # MIT License
 └── README.md
 ```
