@@ -9,6 +9,10 @@
 
 **Product page:** [forextradingtools.eu/en/marketplace/mtf-triple-ma](https://forextradingtools.eu/en/marketplace/mtf-triple-ma)
 
+> **Released version: 1.00.** This is the build the [product page](https://forextradingtools.eu/en/marketplace/mtf-triple-ma) download ships, published as the [v1.00 release](https://github.com/ForexTradingTools/fxtt-mt4-mtf-triple-moving-averages/releases/tag/v1.00). Its source is [`releases/FxTT_MTF_TripleMA-v1_00.mq4`](releases/FxTT_MTF_TripleMA-v1_00.mq4).
+>
+> **`src/` holds 2.00, which is unreleased.** It is the draggable-panel port described below and stays unreleased until the product page is updated for it. `releases/MTF_Triple_MA-v2_00-preview.ex4` is a preview build of it.
+
 ## Overview
 
 The indicator keeps higher-timeframe trend context visible while you work on an execution chart. Each source timeframe supplies three independently period-configurable averages (Fast, Medium, and Slow), mapped onto the active chart. The panel provides one-click timeframe visibility controls, automatic lower-timeframe filtering, collapse/expand, and drag positioning.
@@ -49,15 +53,15 @@ MT4 standard charts support M1 through MN1. Broker history must be available for
 
 ### Using a compiled file
 
-1. Download the compiled `.ex4` release from the [GitHub Releases](https://github.com/ForexTradingTools/fxtt-mt4-mtf-triple-moving-averages/releases) page when available.
+1. Download `FxTT_MTF_TripleMA.zip` from the [v1.00 release](https://github.com/ForexTradingTools/fxtt-mt4-mtf-triple-moving-averages/releases/tag/v1.00) and extract `FxTT_MTF_TripleMA.ex4`.
 2. In MetaTrader 4, select **File → Open Data Folder**.
-3. Open `MQL4/Indicators/` and copy `MTF_Triple_MA.ex4` there.
+3. Open `MQL4/Indicators/` and copy `FxTT_MTF_TripleMA.ex4` there.
 4. Restart MT4, or right-click **Navigator → Indicators** and choose **Refresh**.
-5. Drag **MTF_Triple_MA** from the Navigator onto a chart and click **OK**.
+5. Drag **FxTT_MTF_TripleMA** from the Navigator onto a chart and click **OK**.
 
 ### Compiling the source
 
-The complete self-contained source is in [`src/MTF_Triple_MA.mq4`](src/MTF_Triple_MA.mq4). Open it in MetaEditor, press **Compile**, then install the generated `MTF_Triple_MA.ex4` into `MQL4/Indicators/` as above. The `releases/` directory is reserved for compiled distribution binaries; this repository intentionally does not include a fabricated binary.
+The released 1.00 source is [`releases/FxTT_MTF_TripleMA-v1_00.mq4`](releases/FxTT_MTF_TripleMA-v1_00.mq4). The unreleased 2.00 source is [`src/MTF_Triple_MA.mq4`](src/MTF_Triple_MA.mq4): open it in MetaEditor, press **Compile**, then install the generated `MTF_Triple_MA.ex4` into `MQL4/Indicators/` as above.
 
 ## Settings Reference
 
@@ -110,21 +114,30 @@ After attaching the indicator, drag the **Triple MA Panel** header to move it. C
 ```text
 fxtt-mt4-mtf-triple-moving-averages/
 ├── src/
-│   └── MTF_Triple_MA.mq4       # Complete self-contained MQL4 source
-├── releases/                   # Compiled .ex4 distribution files
+│   └── MTF_Triple_MA.mq4                # Unreleased 2.00 source
+├── releases/
+│   ├── FxTT_MTF_TripleMA-v1_00.ex4      # Released 1.00 build (ready to install)
+│   ├── FxTT_MTF_TripleMA-v1_00.mq4      # Source of the released 1.00 build
+│   └── MTF_Triple_MA-v2_00-preview.ex4  # Unreleased 2.00 preview build
 ├── LICENSE                     # MIT License
 └── README.md
 ```
 
 ## Changelog
 
-### 2.00 — September 2026
+### 2.00 — unreleased (`src/`)
+
+Not shipped until the product page covers it.
 
 - MT4 port of the FxTT MTF Triple MA indicator
 - Nine standard timeframe layers with three MA buffers per layer
 - Draggable/collapsible panel with persistent visibility and position state
 - Independent Fast, Medium, and Slow periods
 - Optional right-side MA labels and lower-timeframe eligibility filtering
+
+### 1.00 — released
+
+- Build shipped by the product page download
 
 ## Related FxTT Repositories
 
